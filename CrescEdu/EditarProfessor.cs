@@ -20,7 +20,7 @@ namespace CrescEdu
             InitializeComponent();
         }
 
-        public EditarProfessor(int id, string nome, string nomeSocial, string cpf, string numero, string email, string tipo)
+        public EditarProfessor(int id, string nome, string nomeSocial, string cpf, string email, string tipo)
         {
             InitializeComponent();
 
@@ -29,7 +29,6 @@ namespace CrescEdu
             textBox2.Text = nome;
             txtNomeSocial.Text = nomeSocial;
             txtCpf.Text = cpf;
-            txtNumero.Text = numero;
             txtEmail.Text = email;
             cbTipo.SelectedItem = tipo;
         }
@@ -40,11 +39,10 @@ namespace CrescEdu
             string nome = textBox2.Text.Trim();
             string nomeSocial = txtNomeSocial.Text.Trim();
             string cpf = txtCpf.Text.Trim();
-            string numero = txtNumero.Text.Trim();
             string email = txtEmail.Text.Trim();
             string tipo = cbTipo.SelectedItem?.ToString().ToLower() ?? "";
 
-            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(cpf) || string.IsNullOrEmpty(numero) || string.IsNullOrEmpty(email))
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(cpf)  || string.IsNullOrEmpty(email))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios.");
                 return;
@@ -57,7 +55,7 @@ namespace CrescEdu
                                  nome = @nome,
                                  nome_social = @nome_social,
                                  cpf = @cpf,
-                                 numero = @numero,
+                    
                                  email = @email
                                  WHERE id = @id";
 
@@ -65,7 +63,6 @@ namespace CrescEdu
                 cmd.Parameters.AddWithValue("@nome", nome);
                 cmd.Parameters.AddWithValue("@nome_social", nomeSocial);
                 cmd.Parameters.AddWithValue("@cpf", cpf);
-                cmd.Parameters.AddWithValue("@numero", numero);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@id", id);
 

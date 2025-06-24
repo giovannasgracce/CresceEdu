@@ -64,14 +64,13 @@ namespace CrescEdu
             string nome = txtNome.Text.Trim();
             string nomeSocial = chkNomeSocial.Checked ? txtNomeSocial.Text.Trim() : "";
             string cpf = txtCpf.Text.Trim();
-            string numero = txtNumero.Text.Trim();
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
 
             string tipo = cbTipo.SelectedValue?.ToString().Trim().ToLower() ?? "";
 
-            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(cpf) || string.IsNullOrEmpty(numero) ||
-                string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(tipo))
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(cpf) ||
+               string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(tipo))
             {
                 MessageBox.Show("Preencha todos os campos obrigatórios!");
                 return;
@@ -98,12 +97,7 @@ namespace CrescEdu
                 return;
             }
 
-            // Validação de Telefone
-            if (!dao.ValidarTelefone(numero))
-            {
-                MessageBox.Show("Telefone inválido! Informe um número com DDD e entre 10 a 11 dígitos.");
-                return;
-            }
+            
 
             // Validação de Email
             if (!dao.ValidarEmail(email))
@@ -111,7 +105,7 @@ namespace CrescEdu
                 MessageBox.Show("E-mail inválido! Informe um e-mail no formato correto (exemplo: nome@dominio.com).");
                 return;
             }
-            string resultado = dao.CadastrarUsuario(nome, nomeSocial, cpf, numero, email, senha, tipo, txtCS.Text.Trim());
+            string resultado = dao.CadastrarUsuario(nome, nomeSocial, cpf, email, senha, tipo, txtCS.Text.Trim());
 
             MessageBox.Show(resultado);
             this.Close();
@@ -200,6 +194,11 @@ namespace CrescEdu
                 txtNomeSocial.Visible = false;
                 txtNomeSocial.Text = "";
             }
+        }
+
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,7 +22,6 @@ namespace CrescEdu
         public List<string> nomeUsuario = new List<string>();
         public List<string> nomeSocialUsuario = new List<string>();
         public List<string> cpfUsuario = new List<string>();
-        public List<string> numeroUsuario = new List<string>();
         public List<string> emailUsuario = new List<string>();
         public List<string> tipoUsuario = new List<string>();
         public List<string> statusUsuario = new List<string>();
@@ -43,7 +42,7 @@ namespace CrescEdu
         }
 
         // MÉTODO CADASTRAR USUÁRIO
-        public string CadastrarUsuario(string nome, string nomeSocial, string cpf, string numero, string email, string senha, string tipo, string codigoSecreto)
+        public string CadastrarUsuario(string nome, string nomeSocial, string cpf, string email, string senha, string tipo, string codigoSecreto)
         {
             const string codigoSecretoProfessor = "PROF123";
             const string codigoSecretoAdmin = "ADMIN123";
@@ -58,15 +57,14 @@ namespace CrescEdu
             try
             {
                 string query = @"INSERT INTO usuarios 
-                        (nome, nome_social, cpf, numero, email, senha, tipo, status, criado_em)
+                        (nome, nome_social, cpf, email, senha, tipo, status, criado_em)
                         VALUES 
-                        (@nome, @nome_social, @cpf, @numero, @email, @senha, @tipo, 'ativo', NOW())";
+                        (@nome, @nome_social, @cpf, @email, @senha, @tipo, 'ativo', NOW())";
 
                 MySqlCommand cmd = new MySqlCommand(query, conexao);
                 cmd.Parameters.AddWithValue("@nome", nome);
                 cmd.Parameters.AddWithValue("@nome_social", nomeSocial);
                 cmd.Parameters.AddWithValue("@cpf", cpf);
-                cmd.Parameters.AddWithValue("@numero", numero);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@senha", senha);
                 cmd.Parameters.AddWithValue("@tipo", tipo);
@@ -129,7 +127,6 @@ namespace CrescEdu
             nomeUsuario.Clear();
             nomeSocialUsuario.Clear();
             cpfUsuario.Clear();
-            numeroUsuario.Clear();
             emailUsuario.Clear();
             tipoUsuario.Clear();
             statusUsuario.Clear();
@@ -146,7 +143,6 @@ namespace CrescEdu
                 nomeUsuario.Add(leitura["nome"].ToString());
                 nomeSocialUsuario.Add(leitura["nome_social"]?.ToString() ?? "");
                 cpfUsuario.Add(leitura["cpf"]?.ToString() ?? "");
-                numeroUsuario.Add(leitura["numero"]?.ToString() ?? "");
                 emailUsuario.Add(leitura["email"].ToString());
                 tipoUsuario.Add(leitura["tipo"].ToString());
                 statusUsuario.Add(leitura["status"].ToString());
@@ -210,12 +206,6 @@ namespace CrescEdu
             return cpf.EndsWith(digito);
         }
 
-        public bool ValidarTelefone(string telefone)
-        {
-            telefone = telefone.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "").Trim();
-
-            return telefone.Length >= 10 && telefone.Length <= 11 && telefone.All(char.IsDigit);
-        }
 
         public bool ValidarEmail(string email)
         {
@@ -240,11 +230,11 @@ namespace CrescEdu
 
                 if (tipo == "todos")
                 {
-                    query = "SELECT id, nome, nome_social, cpf, numero, email, tipo, status, criado_em FROM usuarios";
+                    query = "SELECT id, nome, nome_social, cpf, email, tipo, status, criado_em FROM usuarios";
                 }
                 else
                 {
-                    query = "SELECT id, nome, nome_social, cpf, numero, email, tipo, status, criado_em FROM usuarios WHERE tipo = @tipo";
+                    query = "SELECT id, nome, nome_social, cpf, email, tipo, status, criado_em FROM usuarios WHERE tipo = @tipo";
                 }
 
                 MySqlCommand cmd = new MySqlCommand(query, conexao);

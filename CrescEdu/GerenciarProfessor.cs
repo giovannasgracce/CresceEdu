@@ -40,7 +40,7 @@ namespace CrescEdu
         {
             try
             {
-                string query = "SELECT id, nome, nome_social, cpf, numero, email, status FROM usuarios WHERE tipo = 'professor'";
+                string query = "SELECT id, nome, nome_social, cpf, email, status FROM usuarios WHERE tipo = 'professor'";
                 MySqlCommand cmd = new MySqlCommand(query, dao.conexao);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
                 DataTable tabela = new DataTable();
@@ -61,11 +61,10 @@ namespace CrescEdu
                 string nome = dvgProfessores.SelectedRows[0].Cells["nome"].Value.ToString();
                 string nomeSocial = dvgProfessores.SelectedRows[0].Cells["nome_social"].Value.ToString();
                 string cpf = dvgProfessores.SelectedRows[0].Cells["cpf"].Value.ToString();
-                string numero = dvgProfessores.SelectedRows[0].Cells["numero"].Value.ToString();
                 string email = dvgProfessores.SelectedRows[0].Cells["email"].Value.ToString();
                 string tipo = "professor";
 
-                EditarProfessor editar = new EditarProfessor(id, nome, nomeSocial, cpf, numero, email, tipo);
+                EditarProfessor editar = new EditarProfessor(id, nome, nomeSocial, cpf, email, tipo);
                 editar.ShowDialog();
 
                 AtualizarListaProfessores();
@@ -106,6 +105,11 @@ namespace CrescEdu
             {
                 MessageBox.Show("Selecione um professor para desativar.");
             }
+        }
+
+        private void dvgProfessores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
