@@ -255,6 +255,96 @@ namespace CrescEdu
             return tabela;
         }
 
+        // Inserir compromisso
+        public string CadastrarCompromisso(DateTime data, string titulo, string descricao, string prioridade, string tipo, string turma)
+        {
+            try
+            {
+                conexao.Open();
+                string sql = "INSERT INTO agenda (data, titulo, descricao, prioridade, tipo, turma) " +
+                             "VALUES (@data, @titulo, @descricao, @prioridade, @tipo, @turma)";
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@data", data);
+                cmd.Parameters.AddWithValue("@titulo", titulo);
+                cmd.Parameters.AddWithValue("@descricao", descricao);
+                cmd.Parameters.AddWithValue("@prioridade", prioridade);
+                cmd.Parameters.AddWithValue("@tipo", tipo);
+                cmd.Parameters.AddWithValue("@turma", turma);
 
+                cmd.ExecuteNonQuery();
+                return "Compromisso cadastrado com sucesso!";
+            }
+            catch (Exception ex)
+            {
+                return "Erro: " + ex.Message;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
+
+        // Buscar compromissos do mês
+        public DataTable BuscarCompromissosPorMes(int ano, int mes, string turma, string tipo)
+        {
+            DataTable tabela = new DataTable();
+
+            try
+            {
+                conexao.Open();
+                string sql = "SELECT * FROM agenda WHERE YEAR(data) = @ano AND MONTH(data) = @mes AND turma = @turma AND tipo = @tipo";
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@ano", ano);
+                cmd.Parameters.AddWithValue("@mes", mes);
+                cmd.Parameters.AddWithValue("@turma", turma);
+                cmd.Parameters.AddWithValue("@tipo", tipo);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(tabela);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+
+            return tabela;
+        }
+
+        // Excluir compromisso
+        public string ExcluirCompromisso(DateTime data, string titulo, string turma, string tipo)
+        {
+            try
+            {
+                conexao.Open();
+                string sql = "DELETE FROM agenda WHERE data = @data AND titulo = @titulo AND turma = @turma AND tipo = @tipo";
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@data", data);
+                cmd.Parameters.AddWithValue("@titulo", titulo);
+                cmd.Parameters.AddWithValue("@turma", turma);
+                cmd.Parameters.AddWithValue("@tipo", tipo);
+
+                int linhas = cmd.ExecuteNonQuery();
+
+                if (linhas > 0)
+                    return "Compromisso excluído com sucesso!";
+                else
+                    return "Compromisso não encontrado.";
+            }
+            catch (Exception ex)
+            {
+                return "Erro: " + ex.Message;
+            }
+            finally
+            {
+                conexao.Close();
+            }
+        }
     }
 }
+
+    
+
