@@ -48,7 +48,7 @@
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(222, 315);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(2);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(121, 32);
             this.btnSair.TabIndex = 1;
@@ -82,6 +82,7 @@
             this.bntAgenda.TabIndex = 4;
             this.bntAgenda.Text = "Agenda";
             this.bntAgenda.UseVisualStyleBackColor = true;
+            this.bntAgenda.Click += new System.EventHandler(this.bntAgenda_Click);
             // 
             // TelaProfessor
             // 
@@ -93,7 +94,7 @@
             this.Controls.Add(this.bntProprio);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblBemVindo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaProfessor";
             this.Text = "TelaProfessor";
             this.ResumeLayout(false);

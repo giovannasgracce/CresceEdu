@@ -34,9 +34,10 @@
             // 
             // Entrar
             // 
-            this.Entrar.Location = new System.Drawing.Point(329, 231);
+            this.Entrar.Location = new System.Drawing.Point(247, 188);
+            this.Entrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Entrar.Name = "Entrar";
-            this.Entrar.Size = new System.Drawing.Size(136, 44);
+            this.Entrar.Size = new System.Drawing.Size(102, 36);
             this.Entrar.TabIndex = 0;
             this.Entrar.Text = "Entrar";
             this.Entrar.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // bntLogin
             // 
-            this.bntLogin.Location = new System.Drawing.Point(328, 186);
+            this.bntLogin.Location = new System.Drawing.Point(246, 151);
+            this.bntLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bntLogin.Name = "bntLogin";
-            this.bntLogin.Size = new System.Drawing.Size(136, 36);
+            this.bntLogin.Size = new System.Drawing.Size(102, 29);
             this.bntLogin.TabIndex = 1;
             this.bntLogin.Text = "LOGIN";
             this.bntLogin.UseVisualStyleBackColor = true;
@@ -54,11 +56,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.bntLogin);
             this.Controls.Add(this.Entrar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

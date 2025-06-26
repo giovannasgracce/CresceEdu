@@ -21,5 +21,12 @@ namespace CrescEdu
         {
             this.Close();
         }
+
+        private void bntAgenda_Click(object sender, EventArgs e)
+        {
+            Agenda Ag = new Agenda();
+            Ag.ShowDialog();
+        }
     }
+    
 }

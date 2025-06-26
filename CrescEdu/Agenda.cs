@@ -24,27 +24,43 @@ namespace CrescEdu
         public Agenda()
         {
             InitializeComponent();
-
-            // Inicializar listaPanels e gerar calendário no load
-            listaPanels = new List<Panel>()
-            {
-                panel1, panel2, panel3, panel4, panel5, panel6, panel7,
-                panel8, panel9, panel10, panel11, panel12, panel13, panel14,
-                panel15, panel16, panel17, panel18, panel19, panel20, panel21,
-                panel22, panel23, panel24, panel25, panel26, panel27, panel28,
-                panel29, panel30, panel31, panel32, panel33, panel34, panel35,
-                panel36, panel37, panel38, panel39, panel40, panel41, panel42
-            };
-
+            CriarPanelsCalendario(); 
             GerarCalendario(mesAtual);
         }
 
-        // Função para gerar calendário
+        private void CriarPanelsCalendario()
+        {
+            listaPanels = new List<Panel>();
+            panelCalendario.Controls.Clear(); // Limpa antes de gerar
+
+            int linhas = 6;
+            int colunas = 7;
+            int largura = panelCalendario.Width / colunas;
+            int altura = panelCalendario.Height / linhas;
+
+            for (int linha = 0; linha < linhas; linha++)
+            {
+                for (int coluna = 0; coluna < colunas; coluna++)
+                {
+                    Panel p = new Panel();
+                    p.BorderStyle = BorderStyle.FixedSingle;
+                    p.Width = largura;
+                    p.Height = altura;
+                    p.Left = coluna * largura;
+                    p.Top = linha * altura;
+                    p.BackColor = Color.White;
+
+                    panelCalendario.Controls.Add(p);
+                    listaPanels.Add(p);
+                }
+            }
+        }
+
         void GerarCalendario(DateTime mes)
         {
             DateTime primeiroDia = new DateTime(mes.Year, mes.Month, 1);
             int diasNoMes = DateTime.DaysInMonth(mes.Year, mes.Month);
-            int diaSemana = (int)primeiroDia.DayOfWeek;
+            int diaSemana = ((int)primeiroDia.DayOfWeek + 6) % 7;
 
             label1.Text = mes.ToString("MMMM yyyy");
 
@@ -61,13 +77,18 @@ namespace CrescEdu
             {
                 Panel panelDia = listaPanels[i];
 
-                Label lbl = new Label();
-                lbl.Text = dia.ToString();
-                lbl.Dock = DockStyle.Top;
-                lbl.TextAlign = ContentAlignment.TopLeft;
-                lbl.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                // 🔸 Label do número do dia
+                Label lblDia = new Label();
+                lblDia.Text = dia.ToString();
+                lblDia.Dock = DockStyle.Top;
+                lblDia.TextAlign = ContentAlignment.TopLeft;
+                lblDia.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                lblDia.ForeColor = Color.Black;
 
-                panelDia.Controls.Add(lbl);
+                panelDia.Controls.Add(lblDia);
+
+                
+                int diaClicado = dia;
 
                 var compromissosDoDia = compromissos.AsEnumerable()
                     .Where(row => Convert.ToDateTime(row["data"]).Day == dia);
@@ -80,14 +101,39 @@ namespace CrescEdu
                     lblComp.Height = 15;
                     lblComp.Dock = DockStyle.Top;
                     lblComp.ForeColor = Color.Blue;
+
+                    lblComp.Click += (s, e) =>
+                    {
+                        ModalAgenda modal = new ModalAgenda();
+                        modal.DataSelecionada = new DateTime(mes.Year, mes.Month, diaClicado);
+                        modal.TituloSelecionado = item["titulo"].ToString();
+                        modal.Turma = turmaUsuario;
+                        modal.Tipo = tipoUsuario;
+                        modal.ModoEdicao = true;
+
+                        // Preenche os dados do compromisso
+                        modal.txtTitulo.Text = item["titulo"].ToString();
+                        modal.txtDescricao.Text = item["descricao"].ToString();
+                        modal.cbPrioridade.SelectedItem = item["prioridade"].ToString();
+
+                        modal.ShowDialog();
+                        GerarCalendario(mesAtual);
+                    };
+
                     panelDia.Controls.Add(lblComp);
                 }
 
-                int diaClicado = dia;
+                // 🔸 Clique no quadrado vazio (criar novo compromisso)
                 panelDia.Click += (s, e) =>
                 {
-                    MessageBox.Show($"Dia {diaClicado}/{mes.Month}/{mes.Year}");
-                    // Depois aqui vai a Modal
+                    ModalAgenda modal = new ModalAgenda();
+                    modal.DataSelecionada = new DateTime(mes.Year, mes.Month, diaClicado);
+                    modal.Turma = turmaUsuario;
+                    modal.Tipo = tipoUsuario;
+                    modal.ModoEdicao = false; // Novo compromisso
+
+                    modal.ShowDialog();
+                    GerarCalendario(mesAtual);
                 };
 
                 dia++;
@@ -95,26 +141,27 @@ namespace CrescEdu
         }
 
         // Botões Navegação e Sair
-        private void btnMesProximo_Click(object sender, EventArgs e)
+        private void bntSair_Click(object sender, EventArgs e)
         {
-            mesAtual = mesAtual.AddMonths(1);
-            GerarCalendario(mesAtual);
+            this.Close();
         }
 
-        private void btnMesAnterior_Click(object sender, EventArgs e)
+        private void btnMesAnterior_Click_1(object sender, EventArgs e)
         {
             mesAtual = mesAtual.AddMonths(-1);
             GerarCalendario(mesAtual);
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void btnMesProximo_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            mesAtual = mesAtual.AddMonths(1);
+            GerarCalendario(mesAtual);
         }
 
         // Métodos que você já tinha no formulário (vazios, pode manter ou remover)
         private void label1_Click(object sender, EventArgs e) { }
         private void label6_Click(object sender, EventArgs e) { }
-        private void panel1_Paint(object sender, PaintEventArgs e) { }
+       
+       
     }
 }

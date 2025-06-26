@@ -98,3 +98,5 @@ C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.c
 C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.csproj.CopyComplete
 C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.exe
 C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.pdb
+C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.Agenda.resources
+C:\Users\giovanna.sgracce\source\repos\CrescEdu-c-\CrescEdu\obj\Debug\CrescEdu.ModalAgenda.resources
