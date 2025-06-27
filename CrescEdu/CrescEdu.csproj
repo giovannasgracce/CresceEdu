@@ -104,6 +104,18 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatListForm.Designer.cs">
+      <DependentUpon>ChatListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO.cs" />
     <Compile Include="EditarProfessor.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatListForm.resx">
+      <DependentUpon>ChatListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarProfessor.resx">
       <DependentUpon>EditarProfessor.cs</DependentUpon>

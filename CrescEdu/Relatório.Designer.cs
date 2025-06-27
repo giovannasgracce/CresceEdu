@@ -38,7 +38,7 @@
             // bntExportar
             // 
             this.bntExportar.Location = new System.Drawing.Point(219, 314);
-            this.bntExportar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntExportar.Margin = new System.Windows.Forms.Padding(2);
             this.bntExportar.Name = "bntExportar";
             this.bntExportar.Size = new System.Drawing.Size(110, 41);
             this.bntExportar.TabIndex = 6;
@@ -50,7 +50,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 62);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -62,7 +62,7 @@
             // 
             this.cbFiltroTipo.FormattingEnabled = true;
             this.cbFiltroTipo.Location = new System.Drawing.Point(341, 13);
-            this.cbFiltroTipo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbFiltroTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cbFiltroTipo.Name = "cbFiltroTipo";
             this.cbFiltroTipo.Size = new System.Drawing.Size(106, 21);
             this.cbFiltroTipo.TabIndex = 9;
@@ -71,7 +71,7 @@
             // bntFiltrar
             // 
             this.bntFiltrar.Location = new System.Drawing.Point(460, 9);
-            this.bntFiltrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntFiltrar.Margin = new System.Windows.Forms.Padding(2);
             this.bntFiltrar.Name = "bntFiltrar";
             this.bntFiltrar.Size = new System.Drawing.Size(98, 27);
             this.bntFiltrar.TabIndex = 10;
@@ -82,12 +82,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(615, 387);
             this.Controls.Add(this.bntFiltrar);
             this.Controls.Add(this.cbFiltroTipo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bntExportar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Relatório";
             this.Text = "Relatório";
             this.Load += new System.EventHandler(this.RelatorioUsuarios_Load);

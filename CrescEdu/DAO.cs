@@ -407,6 +407,111 @@ namespace CrescEdu
             }
         }
 
+        //  Enviar Mensagem
+        public void EnviarMensagem(string remetente, string destinatario, string mensagem)
+        {
+            try
+            {
+                string sql = @"INSERT INTO chat (remetente, destinatario, mensagem, dataHora) 
+                       VALUES (@remetente, @destinatario, @mensagem, NOW())";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@remetente", remetente);
+                cmd.Parameters.AddWithValue("@destinatario", destinatario);
+                cmd.Parameters.AddWithValue("@mensagem", mensagem);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao enviar mensagem: " + ex.Message);
+            }
+        }
+
+        //  Buscar mensagens entre dois usuários
+        public DataTable BuscarMensagens(string usuarioAtual, string contato)
+        {
+            DataTable tabela = new DataTable();
+
+            try
+            {
+                string sql = @"SELECT * FROM chat 
+                       WHERE (remetente = @usuario AND destinatario = @contato)
+                          OR (remetente = @contato AND destinatario = @usuario)
+                       ORDER BY dataHora ASC";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@usuario", usuarioAtual);
+                cmd.Parameters.AddWithValue("@contato", contato);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                da.Fill(tabela);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar mensagens: " + ex.Message);
+            }
+
+            return tabela;
+        }
+
+        // Listar usuários que possuem conversa com você
+        public List<string> ListarContatos(string usuarioAtual)
+        {
+            List<string> contatos = new List<string>();
+
+            try
+            {
+                string sql = @"SELECT destinatario AS contato FROM chat WHERE remetente = @usuario
+                       UNION
+                       SELECT remetente AS contato FROM chat WHERE destinatario = @usuario";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@usuario", usuarioAtual);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    contatos.Add(reader.GetString("contato"));
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao listar contatos: " + ex.Message);
+            }
+
+            return contatos;
+        }
+
+        //  Listar todos os usuários cadastrados (para iniciar uma conversa)
+        public List<string> ListarTodosUsuarios(string usuarioAtual)
+        {
+            List<string> usuarios = new List<string>();
+
+            try
+            {
+                string sql = "SELECT email FROM usuarios WHERE email != @usuario AND status = 'ativo'";
+
+                MySqlCommand cmd = new MySqlCommand(sql, conexao);
+                cmd.Parameters.AddWithValue("@usuario", usuarioAtual);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    usuarios.Add(reader.GetString("email"));
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao listar usuários: " + ex.Message);
+            }
+
+            return usuarios;
+        }
+
+
     }
 }
 
