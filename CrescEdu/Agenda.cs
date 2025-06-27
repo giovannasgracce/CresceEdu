@@ -21,6 +21,7 @@ namespace CrescEdu
         string turmaUsuario = "3A"; // depois pode puxar do login
         string tipoUsuario = "professor"; // ou "aluno"
 
+
         public Agenda()
         {
             InitializeComponent();
@@ -80,15 +81,16 @@ namespace CrescEdu
                 // 🔸 Label do número do dia
                 Label lblDia = new Label();
                 lblDia.Text = dia.ToString();
-                lblDia.Dock = DockStyle.Top;
-                lblDia.TextAlign = ContentAlignment.TopLeft;
+                lblDia.Location = new Point(5, 5);
+                lblDia.AutoSize = true;
                 lblDia.Font = new Font("Segoe UI", 10, FontStyle.Bold);
                 lblDia.ForeColor = Color.Black;
-
                 panelDia.Controls.Add(lblDia);
 
-                
                 int diaClicado = dia;
+
+                // 🔸 Começa a desenhar os compromissos abaixo do número do dia
+                int posY = 25; // <-- Essa linha que estava faltando!!
 
                 var compromissosDoDia = compromissos.AsEnumerable()
                     .Where(row => Convert.ToDateTime(row["data"]).Day == dia);
@@ -97,10 +99,12 @@ namespace CrescEdu
                 {
                     Label lblComp = new Label();
                     lblComp.Text = "- " + item["titulo"].ToString();
-                    lblComp.AutoSize = false;
-                    lblComp.Height = 15;
-                    lblComp.Dock = DockStyle.Top;
+                    lblComp.AutoSize = true;
+                    lblComp.Location = new Point(5, posY);
                     lblComp.ForeColor = Color.Blue;
+                    lblComp.Cursor = Cursors.Hand;
+
+                    posY += 15; // Incrementa a posição para o próximo compromisso
 
                     lblComp.Click += (s, e) =>
                     {
@@ -111,7 +115,6 @@ namespace CrescEdu
                         modal.Tipo = tipoUsuario;
                         modal.ModoEdicao = true;
 
-                        // Preenche os dados do compromisso
                         modal.txtTitulo.Text = item["titulo"].ToString();
                         modal.txtDescricao.Text = item["descricao"].ToString();
                         modal.cbPrioridade.SelectedItem = item["prioridade"].ToString();
@@ -124,7 +127,7 @@ namespace CrescEdu
                 }
 
                 // 🔸 Clique no quadrado vazio (criar novo compromisso)
-                panelDia.Click += (s, e) =>
+                panelDia.DoubleClick += (s, e) =>
                 {
                     ModalAgenda modal = new ModalAgenda();
                     modal.DataSelecionada = new DateTime(mes.Year, mes.Month, diaClicado);
@@ -139,6 +142,7 @@ namespace CrescEdu
                 dia++;
             }
         }
+
 
         // Botões Navegação e Sair
         private void bntSair_Click(object sender, EventArgs e)
