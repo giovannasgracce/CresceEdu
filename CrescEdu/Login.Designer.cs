@@ -42,7 +42,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(141, 51);
+            this.lblEmail.Location = new System.Drawing.Point(333, 144);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(48, 16);
             this.lblEmail.TabIndex = 0;
@@ -50,14 +50,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(218, 45);
+            this.txtEmail.Location = new System.Drawing.Point(410, 138);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(113, 22);
             this.txtEmail.TabIndex = 1;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(218, 87);
+            this.txtSenha.Location = new System.Drawing.Point(410, 180);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(112, 22);
@@ -66,7 +66,7 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(148, 85);
+            this.lblSenha.Location = new System.Drawing.Point(340, 178);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(46, 16);
             this.lblSenha.TabIndex = 4;
@@ -74,7 +74,7 @@
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(211, 181);
+            this.btLogin.Location = new System.Drawing.Point(403, 274);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(136, 37);
             this.btLogin.TabIndex = 5;
@@ -85,7 +85,7 @@
             // picOlho
             // 
             this.picOlho.Image = ((System.Drawing.Image)(resources.GetObject("picOlho.Image")));
-            this.picOlho.Location = new System.Drawing.Point(352, 90);
+            this.picOlho.Location = new System.Drawing.Point(544, 183);
             this.picOlho.Name = "picOlho";
             this.picOlho.Size = new System.Drawing.Size(21, 18);
             this.picOlho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +95,7 @@
             // 
             // bntSair
             // 
-            this.bntSair.Location = new System.Drawing.Point(214, 247);
+            this.bntSair.Location = new System.Drawing.Point(406, 340);
             this.bntSair.Name = "bntSair";
             this.bntSair.Size = new System.Drawing.Size(132, 43);
             this.bntSair.TabIndex = 7;
@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1061, 597);
             this.Controls.Add(this.bntSair);
             this.Controls.Add(this.picOlho);
             this.Controls.Add(this.btLogin);

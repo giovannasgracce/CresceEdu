@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\",
+  "WorkspaceRootPath": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\crescedu\\crescedu\\relat\u00F3rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\relat\u00F3rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\cresceedu\\crescedu\\chatlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\chatlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\crescedu\\crescedu\\relat\u00F3rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\relat\u00F3rio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\cresceedu\\crescedu\\chatlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\chatlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\crescedu\\crescedu\\telaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\telaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\cresceedu\\crescedu\\novaconversaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\novaconversaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\telaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\telaadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\cresceedu\\crescedu\\novaconversaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\novaconversaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\crescedu\\crescedu\\gerenciarprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\gerenciarprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\crescedu\\crescedu\\gerenciarprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\gerenciarprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CresceEdu\\crescedu\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|C:\\Users\\fgrac\\source\\repos\\CrescEdu\\crescedu\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|c:\\users\\fgrac\\source\\repos\\cresceedu\\crescedu\\chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0A255B2-EBFB-49B4-9717-3A753F66C137}|CrescEdu\\CrescEdu.csproj|solutionrelative:crescedu\\chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,141 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Relat\u00F3rio.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Relat\u00F3rio.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Relat\u00F3rio.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Relat\u00F3rio.cs",
-              "RelativeToolTip": "CrescEdu\\Relat\u00F3rio.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwA0AAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "DAO.cs",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\DAO.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\DAO.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\DAO.cs",
+              "RelativeToolTip": "CrescEdu\\DAO.cs",
+              "ViewState": "AQIAAGkBAAAAAAAAAADwv/8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T14:14:50.252Z",
+              "WhenOpened": "2025-06-20T19:41:47.339Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TelaAdministrador.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\TelaAdministrador.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\TelaAdministrador.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\TelaAdministrador.cs",
-              "RelativeToolTip": "CrescEdu\\TelaAdministrador.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAASwCUAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "ChatListForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatListForm.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\ChatListForm.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatListForm.cs [Design]",
+              "RelativeToolTip": "CrescEdu\\ChatListForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T21:42:50.609Z",
+              "WhenOpened": "2025-06-29T13:52:21.717Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatListForm.cs",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatListForm.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\ChatListForm.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatListForm.cs",
+              "RelativeToolTip": "CrescEdu\\ChatListForm.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAwFcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:06:44.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TelaAdministrador.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\TelaAdministrador.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\TelaAdministrador.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\TelaAdministrador.cs [Design]",
-              "RelativeToolTip": "CrescEdu\\TelaAdministrador.cs [Design]",
+              "Title": "NovaConversaForm.cs",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\NovaConversaForm.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\NovaConversaForm.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\NovaConversaForm.cs",
+              "RelativeToolTip": "CrescEdu\\NovaConversaForm.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T21:42:47.133Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GerenciarProfessor.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\GerenciarProfessor.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\GerenciarProfessor.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\GerenciarProfessor.cs",
-              "RelativeToolTip": "CrescEdu\\GerenciarProfessor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T13:54:56.929Z",
+              "WhenOpened": "2025-06-29T13:30:04.282Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Relat\u00F3rio.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Relat\u00F3rio.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Relat\u00F3rio.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Relat\u00F3rio.cs [Design]",
-              "RelativeToolTip": "CrescEdu\\Relat\u00F3rio.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T14:00:55.448Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "GerenciarProfessor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\GerenciarProfessor.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\GerenciarProfessor.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\GerenciarProfessor.cs [Design]",
-              "RelativeToolTip": "CrescEdu\\GerenciarProfessor.cs [Design]",
+              "Title": "ChatForm.cs",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatForm.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\ChatForm.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\ChatForm.cs",
+              "RelativeToolTip": "CrescEdu\\ChatForm.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T13:54:43.295Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DAO.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\DAO.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\DAO.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\DAO.cs",
-              "RelativeToolTip": "CrescEdu\\DAO.cs",
-              "ViewState": "AQIAAN0AAAAAAAAAAAAgwO4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T19:41:47.339Z",
+              "WhenOpened": "2025-06-29T13:32:21.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Form1.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Form1.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Form1.cs [Design]",
-              "RelativeToolTip": "CrescEdu\\Form1.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "NovaConversaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\NovaConversaForm.cs",
+              "RelativeDocumentMoniker": "CrescEdu\\NovaConversaForm.cs",
+              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CresceEdu\\CrescEdu\\NovaConversaForm.cs [Design]",
+              "RelativeToolTip": "CrescEdu\\NovaConversaForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T21:43:12.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cadastro.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Cadastro.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Cadastro.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Cadastro.cs [Design]",
-              "RelativeToolTip": "CrescEdu\\Cadastro.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T14:36:04.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Form1.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Form1.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Form1.cs",
-              "RelativeToolTip": "CrescEdu\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T21:43:15.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Cadastro.cs",
-              "DocumentMoniker": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Cadastro.cs",
-              "RelativeDocumentMoniker": "CrescEdu\\Cadastro.cs",
-              "ToolTip": "C:\\Users\\fgrac\\source\\repos\\CrescEdu\\CrescEdu\\Cadastro.cs",
-              "RelativeToolTip": "CrescEdu\\Cadastro.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAwwF8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T14:36:45.686Z"
+              "WhenOpened": "2025-06-29T13:22:31.785Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

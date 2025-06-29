@@ -39,10 +39,9 @@
             // lblTíulo
             // 
             this.lblTíulo.AutoSize = true;
-            this.lblTíulo.Location = new System.Drawing.Point(172, 15);
-            this.lblTíulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTíulo.Location = new System.Drawing.Point(362, 66);
             this.lblTíulo.Name = "lblTíulo";
-            this.lblTíulo.Size = new System.Drawing.Size(111, 13);
+            this.lblTíulo.Size = new System.Drawing.Size(142, 16);
             this.lblTíulo.TabIndex = 0;
             this.lblTíulo.Text = "Gerenciar Professores";
             // 
@@ -50,21 +49,21 @@
             // 
             this.dvgProfessores.AllowUserToOrderColumns = true;
             this.dvgProfessores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgProfessores.Location = new System.Drawing.Point(49, 63);
-            this.dvgProfessores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dvgProfessores.Location = new System.Drawing.Point(198, 126);
+            this.dvgProfessores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dvgProfessores.Name = "dvgProfessores";
             this.dvgProfessores.RowHeadersWidth = 51;
             this.dvgProfessores.RowTemplate.Height = 24;
-            this.dvgProfessores.Size = new System.Drawing.Size(447, 188);
+            this.dvgProfessores.Size = new System.Drawing.Size(596, 231);
             this.dvgProfessores.TabIndex = 1;
             this.dvgProfessores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgProfessores_CellContentClick);
             // 
             // bntCadastrar
             // 
-            this.bntCadastrar.Location = new System.Drawing.Point(28, 287);
-            this.bntCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntCadastrar.Location = new System.Drawing.Point(170, 401);
+            this.bntCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bntCadastrar.Name = "bntCadastrar";
-            this.bntCadastrar.Size = new System.Drawing.Size(82, 32);
+            this.bntCadastrar.Size = new System.Drawing.Size(109, 39);
             this.bntCadastrar.TabIndex = 2;
             this.bntCadastrar.Text = "Cadastrar";
             this.bntCadastrar.UseVisualStyleBackColor = true;
@@ -72,10 +71,10 @@
             // 
             // bntEditar
             // 
-            this.bntEditar.Location = new System.Drawing.Point(135, 285);
-            this.bntEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntEditar.Location = new System.Drawing.Point(313, 399);
+            this.bntEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bntEditar.Name = "bntEditar";
-            this.bntEditar.Size = new System.Drawing.Size(92, 40);
+            this.bntEditar.Size = new System.Drawing.Size(123, 49);
             this.bntEditar.TabIndex = 3;
             this.bntEditar.Text = "Editar Professor";
             this.bntEditar.UseVisualStyleBackColor = true;
@@ -83,10 +82,10 @@
             // 
             // bntExcluir
             // 
-            this.bntExcluir.Location = new System.Drawing.Point(267, 285);
-            this.bntExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bntExcluir.Location = new System.Drawing.Point(489, 399);
+            this.bntExcluir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bntExcluir.Name = "bntExcluir";
-            this.bntExcluir.Size = new System.Drawing.Size(93, 32);
+            this.bntExcluir.Size = new System.Drawing.Size(124, 39);
             this.bntExcluir.TabIndex = 4;
             this.bntExcluir.Text = "Excluir Professor";
             this.bntExcluir.UseVisualStyleBackColor = true;
@@ -94,15 +93,15 @@
             // 
             // GerenciarProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1061, 597);
             this.Controls.Add(this.bntExcluir);
             this.Controls.Add(this.bntEditar);
             this.Controls.Add(this.bntCadastrar);
             this.Controls.Add(this.dvgProfessores);
             this.Controls.Add(this.lblTíulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GerenciarProfessor";
             this.Text = "GerenciarProfessor";
             this.Load += new System.EventHandler(this.GerenciarProfessor_Load);

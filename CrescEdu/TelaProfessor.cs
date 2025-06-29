@@ -12,10 +12,15 @@ namespace CrescEdu
 {
     public partial class TelaProfessor : Form
     {
-        public TelaProfessor()
+        private string usuarioAtual;
+
+        // Construtor que recebe o email do usuário logado
+        public TelaProfessor(string usuarioLogado)
         {
             InitializeComponent();
+            this.usuarioAtual = usuarioLogado;
         }
+
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -27,6 +32,13 @@ namespace CrescEdu
             Agenda Ag = new Agenda();
             Ag.ShowDialog();
         }
+
+        private void bntAbrirChat_Click(object sender, EventArgs e)
+        {
+            // Passa o email do usuário atual para abrir o chat
+            ChatListForm chatList = new ChatListForm(usuarioAtual);
+            chatList.ShowDialog();
+        }
     }
-    
+
 }

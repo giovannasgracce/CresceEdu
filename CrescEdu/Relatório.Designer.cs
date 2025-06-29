@@ -37,10 +37,10 @@
             // 
             // bntExportar
             // 
-            this.bntExportar.Location = new System.Drawing.Point(219, 314);
-            this.bntExportar.Margin = new System.Windows.Forms.Padding(2);
+            this.bntExportar.Location = new System.Drawing.Point(455, 482);
+            this.bntExportar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bntExportar.Name = "bntExportar";
-            this.bntExportar.Size = new System.Drawing.Size(110, 41);
+            this.bntExportar.Size = new System.Drawing.Size(147, 50);
             this.bntExportar.TabIndex = 6;
             this.bntExportar.Text = "Exportar Dados";
             this.bntExportar.UseVisualStyleBackColor = true;
@@ -49,45 +49,45 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 62);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(160, 137);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(556, 248);
+            this.dataGridView1.Size = new System.Drawing.Size(741, 305);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // cbFiltroTipo
             // 
             this.cbFiltroTipo.FormattingEnabled = true;
-            this.cbFiltroTipo.Location = new System.Drawing.Point(341, 13);
-            this.cbFiltroTipo.Margin = new System.Windows.Forms.Padding(2);
+            this.cbFiltroTipo.Location = new System.Drawing.Point(394, 53);
+            this.cbFiltroTipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbFiltroTipo.Name = "cbFiltroTipo";
-            this.cbFiltroTipo.Size = new System.Drawing.Size(106, 21);
+            this.cbFiltroTipo.Size = new System.Drawing.Size(140, 24);
             this.cbFiltroTipo.TabIndex = 9;
             this.cbFiltroTipo.SelectedIndexChanged += new System.EventHandler(this.cbFiltroTipo_SelectedIndexChanged);
             // 
             // bntFiltrar
             // 
-            this.bntFiltrar.Location = new System.Drawing.Point(460, 9);
-            this.bntFiltrar.Margin = new System.Windows.Forms.Padding(2);
+            this.bntFiltrar.Location = new System.Drawing.Point(552, 48);
+            this.bntFiltrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bntFiltrar.Name = "bntFiltrar";
-            this.bntFiltrar.Size = new System.Drawing.Size(98, 27);
+            this.bntFiltrar.Size = new System.Drawing.Size(131, 33);
             this.bntFiltrar.TabIndex = 10;
             this.bntFiltrar.Text = "Filtrar";
             this.bntFiltrar.UseVisualStyleBackColor = true;
             // 
             // Relatório
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 387);
+            this.ClientSize = new System.Drawing.Size(1061, 597);
             this.Controls.Add(this.bntFiltrar);
             this.Controls.Add(this.cbFiltroTipo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bntExportar);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Relatório";
             this.Text = "Relatório";
             this.Load += new System.EventHandler(this.RelatorioUsuarios_Load);

@@ -38,57 +38,68 @@
             // lblContato
             // 
             this.lblContato.AutoSize = true;
-            this.lblContato.Location = new System.Drawing.Point(351, 21);
+            this.lblContato.Location = new System.Drawing.Point(496, 15);
+            this.lblContato.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContato.Name = "lblContato";
-            this.lblContato.Size = new System.Drawing.Size(35, 13);
+            this.lblContato.Size = new System.Drawing.Size(44, 16);
             this.lblContato.TabIndex = 0;
             this.lblContato.Text = "label1";
+            this.lblContato.Click += new System.EventHandler(this.lblContato_Click);
             // 
             // listBoxMensagens
             // 
             this.listBoxMensagens.FormattingEnabled = true;
-            this.listBoxMensagens.Location = new System.Drawing.Point(12, 44);
+            this.listBoxMensagens.ItemHeight = 16;
+            this.listBoxMensagens.Location = new System.Drawing.Point(42, 50);
+            this.listBoxMensagens.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxMensagens.Name = "listBoxMensagens";
-            this.listBoxMensagens.Size = new System.Drawing.Size(776, 641);
+            this.listBoxMensagens.Size = new System.Drawing.Size(1006, 628);
             this.listBoxMensagens.TabIndex = 1;
             // 
             // txtMensagem
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(26, 659);
+            this.txtMensagem.Location = new System.Drawing.Point(64, 646);
+            this.txtMensagem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(698, 20);
+            this.txtMensagem.Size = new System.Drawing.Size(888, 22);
             this.txtMensagem.TabIndex = 2;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(730, 649);
+            this.btnEnviar.Location = new System.Drawing.Point(960, 631);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(50, 30);
+            this.btnEnviar.Size = new System.Drawing.Size(67, 37);
             this.btnEnviar.TabIndex = 3;
             this.btnEnviar.Text = "enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltar.Location = new System.Drawing.Point(16, 15);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(57, 24);
+            this.btnVoltar.Size = new System.Drawing.Size(76, 30);
             this.btnVoltar.TabIndex = 4;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // ChatForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 691);
+            this.ClientSize = new System.Drawing.Size(1061, 697);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.listBoxMensagens);
             this.Controls.Add(this.lblContato);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ChatForm";
             this.Text = "ChatForm";
+            this.Load += new System.EventHandler(this.ChatForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

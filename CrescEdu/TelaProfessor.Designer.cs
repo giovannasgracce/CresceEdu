@@ -33,24 +33,24 @@
             this.bntProprio = new System.Windows.Forms.Button();
             this.bntAlunos = new System.Windows.Forms.Button();
             this.bntAgenda = new System.Windows.Forms.Button();
+            this.bntAbrirChat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblBemVindo
             // 
             this.lblBemVindo.AutoSize = true;
-            this.lblBemVindo.Location = new System.Drawing.Point(220, 21);
-            this.lblBemVindo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBemVindo.Location = new System.Drawing.Point(293, 26);
             this.lblBemVindo.Name = "lblBemVindo";
-            this.lblBemVindo.Size = new System.Drawing.Size(105, 13);
+            this.lblBemVindo.Size = new System.Drawing.Size(135, 16);
             this.lblBemVindo.TabIndex = 0;
             this.lblBemVindo.Text = "Bem-Vindo,Professor";
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(222, 315);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSair.Location = new System.Drawing.Point(296, 388);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(121, 32);
+            this.btnSair.Size = new System.Drawing.Size(161, 39);
             this.btnSair.TabIndex = 1;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -58,43 +58,57 @@
             // 
             // bntProprio
             // 
-            this.bntProprio.Location = new System.Drawing.Point(223, 90);
+            this.bntProprio.Location = new System.Drawing.Point(297, 111);
+            this.bntProprio.Margin = new System.Windows.Forms.Padding(4);
             this.bntProprio.Name = "bntProprio";
-            this.bntProprio.Size = new System.Drawing.Size(115, 34);
+            this.bntProprio.Size = new System.Drawing.Size(153, 42);
             this.bntProprio.TabIndex = 2;
             this.bntProprio.Text = "Modificar Cadastro";
             this.bntProprio.UseVisualStyleBackColor = true;
             // 
             // bntAlunos
             // 
-            this.bntAlunos.Location = new System.Drawing.Point(223, 141);
+            this.bntAlunos.Location = new System.Drawing.Point(297, 174);
+            this.bntAlunos.Margin = new System.Windows.Forms.Padding(4);
             this.bntAlunos.Name = "bntAlunos";
-            this.bntAlunos.Size = new System.Drawing.Size(115, 34);
+            this.bntAlunos.Size = new System.Drawing.Size(153, 42);
             this.bntAlunos.TabIndex = 3;
             this.bntAlunos.Text = "Lista de Alunos";
             this.bntAlunos.UseVisualStyleBackColor = true;
             // 
             // bntAgenda
             // 
-            this.bntAgenda.Location = new System.Drawing.Point(223, 196);
+            this.bntAgenda.Location = new System.Drawing.Point(297, 241);
+            this.bntAgenda.Margin = new System.Windows.Forms.Padding(4);
             this.bntAgenda.Name = "bntAgenda";
-            this.bntAgenda.Size = new System.Drawing.Size(115, 34);
+            this.bntAgenda.Size = new System.Drawing.Size(153, 42);
             this.bntAgenda.TabIndex = 4;
             this.bntAgenda.Text = "Agenda";
             this.bntAgenda.UseVisualStyleBackColor = true;
             this.bntAgenda.Click += new System.EventHandler(this.bntAgenda_Click);
             // 
+            // bntAbrirChat
+            // 
+            this.bntAbrirChat.Location = new System.Drawing.Point(305, 297);
+            this.bntAbrirChat.Name = "bntAbrirChat";
+            this.bntAbrirChat.Size = new System.Drawing.Size(144, 47);
+            this.bntAbrirChat.TabIndex = 5;
+            this.bntAbrirChat.Text = "button1";
+            this.bntAbrirChat.UseVisualStyleBackColor = true;
+            this.bntAbrirChat.Click += new System.EventHandler(this.bntAbrirChat_Click);
+            // 
             // TelaProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1061, 597);
+            this.Controls.Add(this.bntAbrirChat);
             this.Controls.Add(this.bntAgenda);
             this.Controls.Add(this.bntAlunos);
             this.Controls.Add(this.bntProprio);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.lblBemVindo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TelaProfessor";
             this.Text = "TelaProfessor";
             this.ResumeLayout(false);
@@ -109,5 +123,6 @@
         private System.Windows.Forms.Button bntProprio;
         private System.Windows.Forms.Button bntAlunos;
         private System.Windows.Forms.Button bntAgenda;
+        private System.Windows.Forms.Button bntAbrirChat;
     }
 }

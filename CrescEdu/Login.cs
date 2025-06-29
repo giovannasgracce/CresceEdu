@@ -9,15 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-using Mysqlx.Crud;
 
 namespace CrescEdu
 {
-
-
     public partial class Login : Form
     {
         bool senhaVisivel = false;
+
         public Login()
         {
             InitializeComponent();
@@ -40,15 +38,16 @@ namespace CrescEdu
                 }
                 else if (tipoUsuario.ToLower() == "professor")
                 {
-                    TelaProfessor tela = new TelaProfessor();
+                    TelaProfessor tela = new TelaProfessor(email); // ✅ Enviando o email do usuário logado
                     tela.Show();
                 }
                 else
                 {
                     MessageBox.Show("Tipo de usuário desconhecido!");
+                    return;
                 }
 
-                this.Hide();
+                this.Hide(); // Esconde a tela de login após abrir a outra
             }
             else
             {
@@ -56,27 +55,20 @@ namespace CrescEdu
             }
         }
 
-
         private void picOlho_Click(object sender, EventArgs e)
         {
-
-
             if (senhaVisivel)
-                {
-                    // Ocultar senha
-                    txtSenha.PasswordChar = '*';
-                    picOlho.Image = Properties.Resources.eye;  // Troque pelo nome correto da sua imagem
-                    senhaVisivel = false;
-                }
-                else
-                {
-                    // Mostrar senha
-                    txtSenha.PasswordChar = '\0';  // Deixa o texto visível
-                    picOlho.Image = Properties.Resources.view;  // Troque pelo nome correto da sua imagem
-                    senhaVisivel = true;
-                }
-
-            
+            {
+                txtSenha.PasswordChar = '*';
+                picOlho.Image = Properties.Resources.eye;  // Coloque aqui o nome correto da sua imagem do olho fechado
+                senhaVisivel = false;
+            }
+            else
+            {
+                txtSenha.PasswordChar = '\0'; // Deixa o texto visível
+                picOlho.Image = Properties.Resources.view; // Coloque aqui o nome correto da sua imagem do olho aberto
+                senhaVisivel = true;
+            }
         }
 
         private void bntSair_Click(object sender, EventArgs e)
@@ -84,6 +76,4 @@ namespace CrescEdu
             this.Close();
         }
     }
-    
 }
-
